@@ -27,4 +27,10 @@
     select role_id, role_name
     from sys_role
   </select>
+  <select id="getRolesByUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    SELECT a.* from sys_role a,user_role_ref b
+    WHERE
+    a.role_id = b.user_role_id
+    AND b.user_id = #{userId,jdbcType=INTEGER}
+  </select>
 </mapper>

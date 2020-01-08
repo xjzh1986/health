@@ -59,6 +59,35 @@
 			<version>${heath.common.version}</version>
 		</dependency>
 
+		<!--<dependency>-->
+			<!--<groupId>com.health</groupId>-->
+			<!--<artifactId>health-auth</artifactId>-->
+			<!--<version>${heath.auth.version}</version>-->
+		<!--</dependency>-->
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+		</dependency>
+		<!--<dependency>-->
+		<!--<groupId>com.health</groupId>-->
+		<!--<artifactId>health-sys</artifactId>-->
+		<!--<version>0.0.1-SNAPSHOT</version>-->
+		<!--</dependency>-->
+
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.4</version>
+			<classifier>jdk15</classifier>
+		</dependency>
+
+
 
 	</dependencies>
 
@@ -67,6 +96,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<classifier>exec</classifier>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

@@ -20,6 +20,9 @@ public class SysUserService {
     public SysUser selectById(int id){
         return sysUserMapper.selectByPrimaryKey(id);
     }
+    public SysUser getUserByUserName(String username){
+        return sysUserMapper.getUserByUserName(username);
+    }
 
 
 }
