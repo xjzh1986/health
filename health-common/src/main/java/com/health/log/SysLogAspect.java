@@ -29,7 +29,7 @@ public class SysLogAspect {
 	private final static Logger logger = LoggerFactory.getLogger(SysLogAspect.class);
 	// 定义切点 @Pointcut
 	// 在注解的位置切入代码
-	@Pointcut("@annotation(com.example.demo.log.entity.SysLogAnnotation)")
+	@Pointcut("@annotation(com.health.log.entity.SysLogAnnotation)")
 	public void logPoinCut() {
 	}
 
