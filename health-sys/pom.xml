@@ -16,10 +16,15 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<heath.sys.entity>0.0.1-SNAPSHOT</heath.sys.entity>
 	</properties>
 
 	<dependencies>
-
+		<dependency>
+			<groupId>com.heath</groupId>
+			<artifactId>heath-sys-entity</artifactId>
+			<version>${heath.sys.entity}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
