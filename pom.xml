@@ -19,6 +19,8 @@
 		<module>health-auth</module>
 		<module>health-sys</module>
 		<module>heath-sys-entity</module>
+		<module>health-order</module>
+		<module>health-order-entity</module>
 	</modules>
 
 	<properties>
@@ -31,6 +33,8 @@
 		<lombok.version>1.16.10</lombok.version>
 		<springfox-swagger2.version>2.5.0</springfox-swagger2.version>
 		<springfox-swagger-ui.version>2.5.0</springfox-swagger-ui.version>
+		<jjwt.version>0.9.1</jjwt.version>
+		<commons-math3.version>3.6.1</commons-math3.version>
 	</properties>
 
 	<dependencies>
@@ -117,12 +121,12 @@
 			<dependency>
 				<groupId>io.jsonwebtoken</groupId>
 				<artifactId>jjwt</artifactId>
-				<version>0.9.1</version>
+				<version>${jjwt.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-math3</artifactId>
-				<version>3.6.1</version>
+				<version>${commons-math3.version}</version>
 			</dependency>
 
 		</dependencies>
