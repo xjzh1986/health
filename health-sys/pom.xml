@@ -16,8 +16,9 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<heath.sys.entity.version>0.0.1-SNAPSHOT</heath.sys.entity.version>
-		<heath.common.version>0.0.1-SNAPSHOT</heath.common.version>
+		<health.sys.entity.version>0.0.1-SNAPSHOT</health.sys.entity.version>
+		<health.common.version>0.0.1-SNAPSHOT</health.common.version>
+		<health.auth.version>0.0.1-SNAPSHOT</health.auth.version>
 	</properties>
 
 	<dependencies>
@@ -49,12 +50,12 @@
 		<dependency>
 			<groupId>com.heath</groupId>
 			<artifactId>heath-sys-entity</artifactId>
-			<version>${heath.sys.entity.version}</version>
+			<version>${health.sys.entity.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.health</groupId>
 			<artifactId>health-common</artifactId>
-			<version>${heath.common.version}</version>
+			<version>${health.common.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -69,6 +70,12 @@
 			<artifactId>json-lib</artifactId>
 			<version>2.4</version>
 			<classifier>jdk15</classifier>
+		</dependency>
+
+		<dependency>
+			<groupId>com.health</groupId>
+			<artifactId>health-auth</artifactId>
+			<version>${health.auth.version}</version>
 		</dependency>
 	</dependencies>
 

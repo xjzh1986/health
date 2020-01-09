@@ -16,8 +16,9 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<heath.common.version>0.0.1-SNAPSHOT</heath.common.version>
-		<heath.order.entity.version>0.0.1-SNAPSHOT</heath.order.entity.version>
+		<health.common.version>0.0.1-SNAPSHOT</health.common.version>
+		<health.order.entity.version>0.0.1-SNAPSHOT</health.order.entity.version>
+		<health.auth.version>0.0.1-SNAPSHOT</health.auth.version>
 	</properties>
 
 	<dependencies>
@@ -50,18 +51,18 @@
 		<dependency>
 			<groupId>com.health</groupId>
 			<artifactId>health-common</artifactId>
-			<version>${heath.common.version}</version>
+			<version>${health.common.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.health</groupId>
 			<artifactId>health-order-entity</artifactId>
-			<version>${heath.order.entity.version}</version>
+			<version>${health.order.entity.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.health</groupId>
 			<artifactId>health-auth</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>${health.auth.version}</version>
 		</dependency>
 	</dependencies>
 
