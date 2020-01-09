@@ -4,7 +4,6 @@ import com.health.entity.SysUser;
 import com.health.entity.UserEntity;
 import com.health.service.SysUserService;
 import com.health.utils.JwtTokenUtil;
-import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -27,11 +26,11 @@ public class AuthenticationController {
 
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	@ResponseBody
-	public UserEntity login(@RequestBody JSONObject user) {
+	public UserEntity login(@RequestBody SysUser sysUserParam) {
 		UserEntity userEntity = new UserEntity();
 		try {
-			String username = user.getString("username");
-			String password = user.getString("password");
+			String username = sysUserParam.getUserName();
+			String password = sysUserParam.getPassword();
 			Authentication authentication = authenticationManager
 					.authenticate(new UsernamePasswordAuthenticationToken(username, password));
 			SecurityContextHolder.getContext().setAuthentication(authentication);
@@ -57,8 +56,7 @@ public class AuthenticationController {
 
 	@RequestMapping(value = "/refreshToken", method = RequestMethod.POST)
 	@ResponseBody
-	public String refreshToken(@RequestBody JSONObject tokenO) {
-		String token = tokenO.getString("token");
-		return JwtTokenUtil.refreshToken(token);
+	public String refreshToken(@RequestBody String tokenO) {
+		return JwtTokenUtil.refreshToken(tokenO);
 	}
 }
