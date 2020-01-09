@@ -58,6 +58,11 @@
 			<artifactId>health-order-entity</artifactId>
 			<version>${heath.order.entity.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.health</groupId>
+			<artifactId>health-auth</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>

@@ -6,6 +6,7 @@ import com.health.service.HealthOrderService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -26,6 +27,7 @@ public class IndexController {
     @ApiOperation(value = "登出" ,  notes="登出")
     @RequestMapping(value="/removeLogin",method= RequestMethod.POST)
     @ResponseBody
+    @PreAuthorize("hasAuthority('USER')")
     public String removeLogin(@RequestBody HealthOrder healthOrder){
         System.out.println("removeLogin");
         return "SUCCESS";
