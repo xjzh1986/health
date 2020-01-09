@@ -16,7 +16,7 @@
 	<description>Demo project for Spring Boot</description>
 	<modules>
 		<module>health-common</module>
-		<module>health-auth</module>
+		<!--<module>health-auth</module>-->
 		<module>health-sys</module>
 		<module>heath-sys-entity</module>
 		<module>health-order</module>
