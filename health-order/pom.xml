@@ -17,6 +17,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<heath.common.version>0.0.1-SNAPSHOT</heath.common.version>
+		<heath.order.entity.version>0.0.1-SNAPSHOT</heath.order.entity.version>
 	</properties>
 
 	<dependencies>
@@ -55,7 +56,7 @@
 		<dependency>
 			<groupId>com.health</groupId>
 			<artifactId>health-order-entity</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>${heath.order.entity.version}</version>
 		</dependency>
 	</dependencies>
 
