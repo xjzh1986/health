@@ -36,6 +36,7 @@
 		<springfox-swagger-ui.version>2.5.0</springfox-swagger-ui.version>
 		<jjwt.version>0.9.1</jjwt.version>
 		<commons-math3.version>3.6.1</commons-math3.version>
+		<spring.cloud.starter.consul.discovery.version>2.2.1.RELEASE</spring.cloud.starter.consul.discovery.version>
 	</properties>
 
 	<dependencies>
@@ -128,6 +129,17 @@
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-math3</artifactId>
 				<version>${commons-math3.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-actuator</artifactId>
+				<version>${parent.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-consul-discovery</artifactId>
+				<version>${spring.cloud.starter.consul.discovery.version}</version>
 			</dependency>
 
 		</dependencies>
