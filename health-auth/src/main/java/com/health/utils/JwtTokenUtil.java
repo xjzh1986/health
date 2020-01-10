@@ -4,6 +4,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
@@ -130,6 +131,16 @@ public class JwtTokenUtil implements Serializable {
 	public static Boolean validateToken(String token, UserDetails userDetails) {
 		String username = getUsernameFromToken(token);
 		return (username.equals(userDetails.getUsername()) && !isTokenExpired(token));
+	}
+
+
+	public static void main(String[] args){
+		//密码加密
+		BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
+		String password = bCryptPasswordEncoder.encode("meiyoumima");
+		System.out.println(password);
+		boolean tt = bCryptPasswordEncoder.matches("meiyoumima","$2a$10$s5FlF1OF4tUGptReM731JulxsU.8HDUOE9AXFxxdOJO1kNGOAbf2u");
+		System.out.println(tt);
 	}
 
 }
