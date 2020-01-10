@@ -139,7 +139,7 @@ public class JwtTokenUtil implements Serializable {
 		BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
 		String password = bCryptPasswordEncoder.encode("meiyoumima");
 		System.out.println(password);
-		boolean tt = bCryptPasswordEncoder.matches("meiyoumima","$2a$10$s5FlF1OF4tUGptReM731JulxsU.8HDUOE9AXFxxdOJO1kNGOAbf2u");
+		boolean tt = bCryptPasswordEncoder.matches("meiyoumima","$2a$10$Sk/oVlhFrB3p1zUxfCebgex841K9A0LqvV.SkoaTDOAnU8.aEhB2q");
 		System.out.println(tt);
 	}
 
