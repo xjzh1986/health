@@ -60,7 +60,7 @@ public class JwtTokenUtil implements Serializable {
 	/**
 	 * 生成令牌
 	 *
-	 * @param userDetails 用户
+	 * @param username 用户名
 	 * @return 令牌
 	 */
 	public static String generateToken(String username) {
@@ -139,7 +139,7 @@ public class JwtTokenUtil implements Serializable {
 		BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
 		String password = bCryptPasswordEncoder.encode("meiyoumima");
 		System.out.println(password);
-		boolean tt = bCryptPasswordEncoder.matches("meiyoumima","$2a$10$Sk/oVlhFrB3p1zUxfCebgex841K9A0LqvV.SkoaTDOAnU8.aEhB2q");
+		boolean tt = bCryptPasswordEncoder.matches("meiyoumima","$2a$10$KeAdMoO7o3o8qzsOcZZH0uVOqVMt6JvZ12bDZSYkk6eO1AWjZvv0G");
 		System.out.println(tt);
 	}
 
