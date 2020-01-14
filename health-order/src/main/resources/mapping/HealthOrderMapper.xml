@@ -11,13 +11,8 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.health.entity.HealthOrder">
-    <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.Integer">
-      SELECT LAST_INSERT_ID()
-    </selectKey>
-    insert into health_order (id, order_name, order_front_img
-      )
-    values (#{id,jdbcType=INTEGER}, #{orderName,jdbcType=VARCHAR}, #{orderFrontImg,jdbcType=VARCHAR}
-      )
+    insert into health_order (order_name, order_front_img)
+    values (#{orderName,jdbcType=VARCHAR}, #{orderFrontImg,jdbcType=VARCHAR})
   </insert>
   <update id="updateByPrimaryKey" parameterType="com.health.entity.HealthOrder">
     update health_order

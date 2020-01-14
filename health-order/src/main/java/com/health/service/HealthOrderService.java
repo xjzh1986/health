@@ -21,5 +21,9 @@ public class HealthOrderService {
         return healthOrderMapper.selectByPrimaryKey(id);
     }
 
+    public void insert(HealthOrder healthOrder){
+        healthOrderMapper.insert(healthOrder);
+    }
+
 
 }

@@ -19,6 +19,7 @@
 		<health.sys.entity.version>0.0.1-SNAPSHOT</health.sys.entity.version>
 		<health.common.version>0.0.1-SNAPSHOT</health.common.version>
 		<health.auth.version>0.0.1-SNAPSHOT</health.auth.version>
+		<health.order.entity>0.0.1-SNAPSHOT</health.order.entity>
 	</properties>
 
 	<dependencies>
@@ -71,6 +72,11 @@
 			<artifactId>health-auth</artifactId>
 			<version>${health.auth.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.health</groupId>
+			<artifactId>health-order-entity</artifactId>
+			<version>${health.order.entity}</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -88,6 +94,11 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-consul-discovery</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
 
 	</dependencies>
