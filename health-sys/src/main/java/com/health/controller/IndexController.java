@@ -30,6 +30,8 @@ public class IndexController {
     @RequestMapping(value="/removeLogin",method= RequestMethod.POST)
     @ResponseBody
     public String removeLogin(@RequestBody SysUser sysUser){
+        System.out.println("登出");
+        SysUser sysUserResult = sysUserService.selectById(1);
 
         return "SUCCESS";
     }
