@@ -29,7 +29,7 @@
 		<parent.version>2.2.2.RELEASE</parent.version>
 		<druid.version>1.1.10</druid.version>
 		<mysql.version>8.0.16</mysql.version>
-		<fastjson.version>1.2.8</fastjson.version>
+		<fastjson.version>1.2.83</fastjson.version>
 		<pagehelper.version>1.2.4</pagehelper.version>
 		<lombok.version>1.16.10</lombok.version>
 		<springfox-swagger2.version>2.5.0</springfox-swagger2.version>
